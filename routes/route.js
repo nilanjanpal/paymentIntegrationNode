@@ -18,6 +18,7 @@ router.post('/createOrder', (req, res, next) => {
                             notes: req.body.notes})
     .then(
         (response) => {
+            resObj = {id: response.id,apiKey: apiKey }
             res.send(resObj);
         }
     )
