@@ -48,8 +48,8 @@ router.post('/checkoutStripe', (req, res, next) => {
         ],
         customer_email: req.body.email,
         mode: 'payment',
-        success_url: 'https://paymentintegrtn.herokuapp.com/index.html',
-        cancel_url: 'https://paymentintegrtn.herokuapp.com/index.html'
+        success_url: 'https://payment-integration-8573c.web.app/',
+        cancel_url: 'https://payment-integration-8573c.web.app/'
         // success_url: 'http://localhost:4200/index.html',
         // cancel_url: 'http://localhost:4200/index.html',
     };
